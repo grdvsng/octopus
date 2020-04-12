@@ -1,0 +1,128 @@
+{
+    "path": "../../logs/miniBase.log.html",
+
+    "page": {
+        "tag": "html",
+
+        "items": [{
+            "tag": "head",
+
+            "items": [{
+                "tag": "style",
+                "property": {"type": "text/css"},
+                "innerText": [
+                    "th, td {",
+                    "border: 1px solid black;",
+                    "padding: 5px;",
+                    "}",
+                    ".Main-Table {",
+                    "border-collapse: separate;",
+                    "border-spacing: 0px;",
+                    "}",
+                    "th {",
+                    "background-color: #7cd6b0;",
+                    "font-size: 14pt;",
+                    "}",
+                    ".Search-Filter {",
+                    "border: none;",
+                    "font-size: 12pt;",
+                    "outline: 0;",
+                    "outline-offset: 0;",
+                    "}",
+                    ".Warning {",
+                    "background-color: #ffa909;",
+                    "}",
+                    ".Error {",
+                    "background-color: #ad4d46;",
+                    "}"
+                ]
+            }, {
+                "tag": "title",
+                "innerText": "Log File"
+            }]
+        }, {
+            "tag": "body",
+
+            "items": [{
+                "tag": "table",
+                "property": {"class": "Main-Table"},
+
+                "items": [{
+                    "tag": "thead",
+                    "items": [{
+                        "tag": "tr",
+
+                        "items": [{
+                            "tag": "th",
+                            "innerText": "Title"
+                        }, {
+                            "tag": "th",
+                            "innerText": "Description"
+                        }, {
+                            "tag": "th",
+                            "innerText": "Time"
+                        }, {
+                            "tag": "th",
+                            "innerText": "Type"
+                        }]
+                    }]
+                }, {
+                    "tag": "tbody",
+                    "items": [{
+                        "tag": "tr",
+
+                        "items": [{
+                            "tag": "td",
+                            "property": {"class": "tHeader"},
+
+                            "items": [{
+                                "tag": "input",
+                                "property": {
+                                "onkeydown":"(function(self) { var placeholder = self.placeholder; var val = new RegExp(self.value, 'gi'); var elems; if (placeholder.match(/Time/gi)) { elems = document.getElementsByClassName('EventTime'); } else if (placeholder.match(/Description/gi)) { elems = document.getElementsByClassName('EventDescription'); } else if (placeholder.match(/Type/gi)) { elems = document.getElementsByClassName('EventType'); } else { elems = document.getElementsByClassName('EventTitle'); } for (var n=0; n < elems.length; n++) { var elem = elems[n]; if (elem.innerHTML.match(val)) { elem.parentNode.style.display = 'table-row'; } else { elem.parentNode.style.display = 'none';} }})(this);",
+                                    "class": "Search-Filter",
+                                    "placeholder": "Title filter"
+                                }
+                            }]
+                        }, {
+                            "tag": "td",
+                            "property": {"class": "tHeader"},
+
+                            "items": [{
+                                "tag": "input",
+                                "property": {
+                                    "onkeyup": "(function(self) { var placeholder = self.placeholder; var val = new RegExp(self.value, 'gi'); var elems; if (placeholder.match(/Time/gi)) { elems = document.getElementsByClassName('EventTime'); } else if (placeholder.match(/Description/gi)) { elems = document.getElementsByClassName('EventDescription'); } else if (placeholder.match(/Type/gi)) { elems = document.getElementsByClassName('EventType'); } else { elems = document.getElementsByClassName('EventTitle'); } for (var n=0; n < elems.length; n++) { var elem = elems[n]; if (elem.innerHTML.match(val)) { elem.parentNode.style.display = 'table-row'; } else { elem.parentNode.style.display = 'none';} }})(this);",
+                                    "class": "Search-Filter",
+                                    "placeholder": "Description filter"
+                                }
+                            }]
+                        }, {
+                            "tag": "td",
+                            "property": {"class": "tHeader"},
+
+                            "items": [{
+                                "tag": "input",
+                                "property": {
+                                    "onkeyup":"(function(self) { var placeholder = self.placeholder; var val = new RegExp(self.value, 'gi'); var elems; if (placeholder.match(/Time/gi)) { elems = document.getElementsByClassName('EventTime'); } else if (placeholder.match(/Description/gi)) { elems = document.getElementsByClassName('EventDescription'); } else if (placeholder.match(/Type/gi)) { elems = document.getElementsByClassName('EventType'); } else { elems = document.getElementsByClassName('EventTitle'); } for (var n=0; n < elems.length; n++) { var elem = elems[n]; if (elem.innerHTML.match(val)) { elem.parentNode.style.display = 'table-row'; } else { elem.parentNode.style.display = 'none';} }})(this);",
+                                    "class": "Search-Filter",
+                                    "placeholder": "Time filter"
+                                }
+                            }]
+                        }, {
+                            "tag": "td",
+                            "property": {"class": "tHeader"},
+
+                            "items": [{
+                                "tag": "input",
+                                "property": {
+                                    "onkeyup":"(function(self) { var placeholder = self.placeholder; var val = new RegExp(self.value, 'gi'); var elems; if (placeholder.match(/Time/gi)) { elems = document.getElementsByClassName('EventTime'); } else if (placeholder.match(/Description/gi)) { elems = document.getElementsByClassName('EventDescription'); } else if (placeholder.match(/Type/gi)) { elems = document.getElementsByClassName('EventType'); } else { elems = document.getElementsByClassName('EventTitle'); } for (var n=0; n < elems.length; n++) { var elem = elems[n]; if (elem.innerHTML.match(val)) { elem.parentNode.style.display = 'table-row'; } else { elem.parentNode.style.display = 'none';} }})(this);",
+                                    "class": "Search-Filter",
+                                    "placeholder": "Type filter"
+                                }
+                            }]
+                        }]
+                    }]
+                }]
+            }]
+        }]
+    }
+}

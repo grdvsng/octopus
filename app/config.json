@@ -1,0 +1,31 @@
+{
+    "connection":
+    {
+        "host": "localhost",
+        "port": "8080"
+    },
+
+    "base":
+    {
+        "type":        "postgresql",
+        "host":        "localhost",
+        "port":        5433,
+        "db":          "lazy_panda",
+        "user":        "postgres",
+        "password":    "CPythonP@ss",
+        "log":         "./db.html",
+        "use_universal_models": true
+    },
+
+    "basic":
+    {
+        "CSRF_ENABLED": true,
+        "SECRET_KEY":   "qwerty1234"
+    },
+
+    "files":
+    {
+        "template_folder": "./web.application/",
+        "static_folder":   "./web.application/"
+    }
+}

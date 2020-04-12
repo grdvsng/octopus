@@ -1,0 +1,91 @@
+
+<html>
+	
+<head>
+	
+<style type="text/css">
+	th, td {
+border: 1px solid black;
+padding: 5px;
+}
+.Main-Table {
+border-collapse: separate;
+border-spacing: 0px;
+}
+th {
+background-color: #7cd6b0;
+font-size: 14pt;
+}
+.Search-Filter {
+border: none;
+font-size: 12pt;
+outline: 0;
+outline-offset: 0;
+}
+.Warning {
+background-color: #ffa909;
+}
+.Error {
+background-color: #ad4d46;
+}
+
+</style>
+<title>
+	Log File
+</title>
+</head>
+<body>
+	
+<table class="Main-Table">
+	
+<thead>
+	
+<tr>
+	
+<th>
+	Title
+</th>
+<th>
+	Description
+</th>
+<th>
+	Time
+</th>
+<th>
+	Type
+</th>
+</tr>
+</thead>
+<tbody>
+	
+<tr>
+	
+<td class="tHeader">
+	
+<input onkeydown="(function(self) { var placeholder = self.placeholder; var val = new RegExp(self.value, 'gi'); var elems; if (placeholder.match(/Time/gi)) { elems = document.getElementsByClassName('EventTime'); } else if (placeholder.match(/Description/gi)) { elems = document.getElementsByClassName('EventDescription'); } else if (placeholder.match(/Type/gi)) { elems = document.getElementsByClassName('EventType'); } else { elems = document.getElementsByClassName('EventTitle'); } for (var n=0; n < elems.length; n++) { var elem = elems[n]; if (elem.innerHTML.match(val)) { elem.parentNode.style.display = 'table-row'; } else { elem.parentNode.style.display = 'none';} }})(this);" class="Search-Filter" placeholder="Title filter">
+	
+</input>
+</td>
+<td class="tHeader">
+	
+<input onkeyup="(function(self) { var placeholder = self.placeholder; var val = new RegExp(self.value, 'gi'); var elems; if (placeholder.match(/Time/gi)) { elems = document.getElementsByClassName('EventTime'); } else if (placeholder.match(/Description/gi)) { elems = document.getElementsByClassName('EventDescription'); } else if (placeholder.match(/Type/gi)) { elems = document.getElementsByClassName('EventType'); } else { elems = document.getElementsByClassName('EventTitle'); } for (var n=0; n < elems.length; n++) { var elem = elems[n]; if (elem.innerHTML.match(val)) { elem.parentNode.style.display = 'table-row'; } else { elem.parentNode.style.display = 'none';} }})(this);" class="Search-Filter" placeholder="Description filter">
+	
+</input>
+</td>
+<td class="tHeader">
+	
+<input onkeyup="(function(self) { var placeholder = self.placeholder; var val = new RegExp(self.value, 'gi'); var elems; if (placeholder.match(/Time/gi)) { elems = document.getElementsByClassName('EventTime'); } else if (placeholder.match(/Description/gi)) { elems = document.getElementsByClassName('EventDescription'); } else if (placeholder.match(/Type/gi)) { elems = document.getElementsByClassName('EventType'); } else { elems = document.getElementsByClassName('EventTitle'); } for (var n=0; n < elems.length; n++) { var elem = elems[n]; if (elem.innerHTML.match(val)) { elem.parentNode.style.display = 'table-row'; } else { elem.parentNode.style.display = 'none';} }})(this);" class="Search-Filter" placeholder="Time filter">
+	
+</input>
+</td>
+<td class="tHeader">
+	
+<input onkeyup="(function(self) { var placeholder = self.placeholder; var val = new RegExp(self.value, 'gi'); var elems; if (placeholder.match(/Time/gi)) { elems = document.getElementsByClassName('EventTime'); } else if (placeholder.match(/Description/gi)) { elems = document.getElementsByClassName('EventDescription'); } else if (placeholder.match(/Type/gi)) { elems = document.getElementsByClassName('EventType'); } else { elems = document.getElementsByClassName('EventTitle'); } for (var n=0; n < elems.length; n++) { var elem = elems[n]; if (elem.innerHTML.match(val)) { elem.parentNode.style.display = 'table-row'; } else { elem.parentNode.style.display = 'none';} }})(this);" class="Search-Filter" placeholder="Type filter">
+	
+</input>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
